@@ -1,0 +1,426 @@
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ ls-la
+bash: ls-la: command not found
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ la-l
+bash: la-l: command not found
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ la-ls
+bash: la-ls: command not found
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ ls - la
+ls: cannot access '-': No such file or directory
+ls: cannot access 'la': No such file or directory
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ ls -la
+total 18
+drwxr-xr-x 1 user 197121   0 Aug 14 10:36 ./
+drwxr-xr-x 1 user 197121   0 Aug 13 19:44 ../
+drwxr-xr-x 1 user 197121   0 Aug 13 12:46 .dist/
+drwxr-xr-x 1 user 197121   0 Aug 14 09:11 .git/
+-rw-r--r-- 1 user 197121   0 Aug 14 10:36 .gitignore
+drwxr-xr-x 1 user 197121   0 Aug 13 12:57 .vscode/
+-rw-r--r-- 1 user 197121  49 Aug 14 06:45 database.txt
+-rw-r--r-- 1 user 197121 351 Aug 13 14:16 main.py
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git add .
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git commit -m "Ignored files"
+[master 6817d3c] Ignored files
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git log\
+>
+commit 6817d3cf0c0f77fbca475922231bfd2733417530 (HEAD -> master)
+Author: Dibyanshu Das <Dibyanshu2242@gmail.com>
+Date:   Fri Aug 14 10:38:55 2020 +0530
+
+    Ignored files
+
+commit 7836829fa5621ab5761c96adc31151a0a02b83ee (origin/master)
+Author: Dibyanshu Das <Dibyanshu2242@gmail.com>
+Date:   Fri Aug 14 08:57:47 2020 +0530
+
+    Python
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 351 bytes | 87.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/DibyanshuDas/Python
+   7836829..6817d3c  master -> master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ sccscsc
+bash: sccscsc: command not found
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ \
+> 1
+bash: 1: command not found
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ +
++bash: +: command not found
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ +
+bash: +: command not found
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ +
+bash: +: command not found
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch
+* master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git add branch
+fatal: pathspec 'branch' did not match any files
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch login system
+fatal: Not a valid object name: 'system'.
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch
+* master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch login system
+fatal: Not a valid object name: 'system'.
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch login
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch
+  login
+* master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git checkout login
+Switched to branch 'login'
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (login)
+$ git branch
+* login
+  master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (login)
+$ git status
+On branch login
+nothing to commit, working tree clean
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (login)
+$ git add .
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (login)
+$ git commit -m "Added login "
+[login b00ee84] Added login
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Test.txt
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (login)
+$ git push origin master
+git push oEverything up-to-date
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (login)
+$ git push origin login
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 240 bytes | 240.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'login' on GitHub by visiting:
+remote:      https://github.com/DibyanshuDas/Python/pull/new/login
+remote:
+To https://github.com/DibyanshuDas/Python
+ * [new branch]      login -> login
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (login)
+$ git branch
+* login
+  master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (login)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git merge login system
+merge: system - not something we can merge
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git merge login
+Updating 6817d3c..b00ee84
+Fast-forward
+ Test.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Test.txt
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/DibyanshuDas/Python
+   6817d3c..b00ee84  master -> master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git push origin master
+Everything up-to-date
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$  git branch
+  login
+* master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git merge login
+Already up to date.
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git push
+Everything up-to-date
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch delete
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch
+  delete
+  login
+* master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch -t delete
+fatal: A branch named 'delete' already exists.
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch -d delete
+Deleted branch delete (was b00ee84).
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch -d login
+Deleted branch login (was b00ee84).
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch
+* master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git push origin --delete login
+git pTo https://github.com/DibyanshuDas/Python
+ - [deleted]         login
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch l
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch -d l
+Deleted branch l (was b00ee84).
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git push origin master
+Everything up-to-date
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch -d l
+error: branch 'l' not found.
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch l
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git push origin master
+Everything up-to-date
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch l
+fatal: A branch named 'l' already exists.
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git checkout l
+Switched to branch 'l'
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git add .
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git commit -m"test"
+On branch l
+nothing to commit, working tree clean
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git status
+On branch l
+nothing to commit, working tree clean
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git log
+commit b00ee8462a457432625b6ab3ef8e097f2329d6d2 (HEAD -> l, origin/master, master)
+Author: Dibyanshu Das <Dibyanshu2242@gmail.com>
+Date:   Fri Aug 14 10:45:16 2020 +0530
+
+    Added login
+
+commit 6817d3cf0c0f77fbca475922231bfd2733417530
+Author: Dibyanshu Das <Dibyanshu2242@gmail.com>
+Date:   Fri Aug 14 10:38:55 2020 +0530
+
+    Ignored files
+
+commit 7836829fa5621ab5761c96adc31151a0a02b83ee
+Author: Dibyanshu Das <Dibyanshu2242@gmail.com>
+Date:   Fri Aug 14 08:57:47 2020 +0530
+
+    Python
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git branch
+* l
+  master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git checkout l
+Switched to branch 'l'
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git add .
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git status
+On branch l
+nothing to commit, working tree clean
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git .A
+git: '.A' is not a git command. See 'git --help'.
+
+The most similar commands are
+        am
+        gc
+        mv
+        p4
+        rm
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git add .A
+fatal: pathspec '.A' did not match any files
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git add .
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git status
+On branch l
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Test.txt
+
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git commit -m"deleted login"
+[l bb4fc78] deleted login
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Test.txt
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git push origin l
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 226 bytes | 226.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'l' on GitHub by visiting:
+remote:      https://github.com/DibyanshuDas/Python/pull/new/l
+remote:
+To https://github.com/DibyanshuDas/Python
+ * [new branch]      l -> l
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git merge l
+Already up to date.
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (l)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git merge l
+Updating b00ee84..bb4fc78
+Fast-forward
+ Test.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Test.txt
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/DibyanshuDas/Python
+   b00ee84..bb4fc78  master -> master
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git branch -d l
+Deleted branch l (was bb4fc78).
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git push
+Everything up-to-date
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ git push origin --delete l
+fdfdfdfTo https://github.com/DibyanshuDas/Python
+ - [deleted]         l
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$ ^C
+
+user@DELL MINGW64 ~/Desktop/HTML/Python projects(CODEWITHHARRY) (master)
+$
